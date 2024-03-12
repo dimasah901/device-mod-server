@@ -1,5 +1,6 @@
 (async () => {
 
+    
     const express = require('express');
     const app = express();
     const { LuaFactory } = require('wasmoon');
@@ -40,6 +41,9 @@
 
     })
 
-    app.listen(8000)
+    app.listen(8000);
+    if (process.argv0 == 'test') { setTimeout(() => {
+        app.close();
+    }, 1000); }
 
 })();
