@@ -8,7 +8,7 @@ They work exactly as before, but use a different url structure. Example url:
 With the use of folder names as the domain instead of the suffix/domain, websites can now have subdomains, for example:
 ```help.hello.world```.
 ## How do servers work?
-When the main server starts, it reads all of the lua scripts inside the ```./servers``` folder. For each of these servers, a new **wasmoon** lua engine gets created. Then, the global ```server``` is set to a function for server creation. After, the cached ```./sumneko.lua/app.lua``` script gets executed and adds some functions, such as ```Ternary```, ```Array.indexOf``` and ```Array.push```. Finally, the lua script inside the ```./servers``` folder is executed.
+When the main server starts, it reads all of the lua scripts inside the ```./servers``` folder. For each of these servers, a new **wasmoon** lua engine gets created. Then, the global ```server``` is set to a function for server creation. After, the cached ```./sumneko.lua/app.lua``` script gets executed and adds some functions, such as ```Ternary```, ```Array.indexOf``` and ```Array.push```. Finally, the lua script inside the ```./servers``` folder is executed. Each server is ran in a different enviroment to prevent servers from talking to each other and to not require the use of local variables only.
 
 
 # GitWeb-Sites
