@@ -1,0 +1,14 @@
+---Create a server
+--- 
+--- ---
+---```lua
+---server({url = 'hello.world'}, function (app)
+---    app.db.data = 'Hello World! ';
+---    app.get('*', function (req)
+---        return app.db.data .. 'You opened "' .. req.url .. '", "' .. req.path .. '", "' .. req.query .. '"!';
+---    end)
+---end)
+---```
+---@param options {url: string}
+---@param callback function
+function server (options, callback) end
