@@ -1,0 +1,23 @@
+
+#navigation
+color=-1
+item-link-1=azure.microsoft
+item-label-1=Azure
+item-link-2=azure.microsoft/explore
+item-label-2=Explore
+item-link-3=azure.microsoft/products
+item-label-3=Products
+item-link-4=azure.microsoft/pricing
+item-label-4=Pricing
+
+#paragraph
+color=-1
+text=&lAZURE. INVENT WITH PURPOSE.\n\nLearn, connect and explore\n&rEnvision and create intelligent apps with the latest technologies announced at Microsoft Build. Get started now with pay-as-you-go pricing. There’s no upfront commitment - cancel anytime. Or try Azure free for up to 30 days.
+
+#navigation
+color=-8355712
+item-link-1=azure.microsoft/getstarted
+item-label-1=Get started
+item-link-2=azure.microsoft/freetry
+item-label-2=Try Azure for free
+

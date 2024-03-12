@@ -8,6 +8,8 @@
     const factory = new LuaFactory();
     const lua = await factory.createEngine();
 
+    const fs = require('fs/promises');
+
     let servers = {};
     let servers_ = [];
 
@@ -25,7 +27,8 @@
     	}
     });
 
-    let static_websites = [];
+    let static_websites = await fs.readdir('static');
+    console.log(static_websites)
 
 
     app.get('*', async (req, res) => {
