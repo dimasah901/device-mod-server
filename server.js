@@ -42,6 +42,7 @@
     })
 
     app.listen(8000);
+    console.log(process.argv0, process.argv)
     if (process.argv0 == 'test') { setTimeout(() => {
         app.close();
     }, 1000); }
