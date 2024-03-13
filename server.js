@@ -20,7 +20,7 @@
             callback({
                 url: options.url,
                 get: (path, callback) => { server.push([path, callback]) },
-                db: {}
+                storage: {}
             });
         }
     }
