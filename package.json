@@ -8,6 +8,6 @@
     "start": "node server.js",
     "test": "node server.js test"
   },
-  "engines" : { "node" : ">=21.1.0" },
+  "engines" : { "node" : ">=21.0.0" },
   "engineStrict" : true
 }
