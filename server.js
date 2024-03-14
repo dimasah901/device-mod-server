@@ -19,7 +19,7 @@
             servers_.push(options.url);
             callback({
                 url: options.url,
-                get: (path, callback) => { server.paths.push({ path: path, callback: callback }) },
+                get: (path, callback) => { server.push([path, callback]) },
                 storage: {}
             });
         }
